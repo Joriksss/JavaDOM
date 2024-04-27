@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<body>
+    <div class="container" id="container">
+        <div class="block1" id="block1">
+            <p>Блок 1.</p>
+            <p>Текст 1.</p>
+            <p>Текст 2.</p>
+        </div>
+        <div class="block2" id="block2">
+            <p>Блок 2.</p>
+            <p>Текст 1.</p>
+            <p>Текст 2.</p>
+        </div>
+    </div>
+
+    <input type="submit" id="button">
+
+<style>
+    .container {
+        display: flex;
+        width: 100%;
+        }
+    .block1{
+        background-color: red;
+        flex: 1;
+        padding: 20px;
+    }
+
+    p{
+        color:white;
+        /* padding: 10px; */
+    }
+
+    .block2{
+        background-color: blue;
+        flex: 1;
+        padding: 20px;
+    }
+</style>
+
+<script>
+    
+
+    function func(){
+        document.getElementById("block1").style.backgroundColor = "blue";
+        document.getElementById("block2").style.backgroundColor = "red";
+        const block1 = document.getElementById('block1');
+        const block2 = document.getElementById('block2');
+        const block1Text = block1.innerHTML;
+        block1.innerHTML = block2.innerHTML;
+        block2.innerHTML = block1Text
+    }
+
+    function func1(){
+        document.getElementById("block2").style.backgroundColor = "blue";
+        document.getElementById("block1").style.backgroundColor = "red";
+    }
+</script>
+</body>

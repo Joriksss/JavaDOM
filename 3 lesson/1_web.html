@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+    <input id="cliker" type="button" value="Нажми на меня">
+    <script>
+        function handler1(){
+            alert("Thanks!");
+        };
+        function handler2(){
+            alert("Thanks on moment");
+        };
+
+        cliker.onclick = () => alert("qq");
+        cliker.addEventListener("click", handler1);
+        cliker.addEventListener("click", handler2);
+    </script>
+</body>

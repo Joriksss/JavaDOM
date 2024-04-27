@@ -1,0 +1,13 @@
+<p class="www">Текст абзаца.</p>
+<p class="www">Текст абзаца.</p>
+<p>Текст абзаца.</p>
+<input type="submit" onclick="func()">
+
+<script>
+    function func(){
+        let elems = document.getElementsByClassName("www");
+        for (let i = 0; i < elems.length; i++){
+            elems[i].innerHTML = "Новый текст абзаца.";
+        }
+    }
+</script>

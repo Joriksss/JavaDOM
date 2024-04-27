@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+    <input type="button" value="Нажми меня" id="cliker">
+
+    <script>
+        cliker.onclick = function(event){
+            alert(event.type + " на " + event.currentTarget);
+            alert("Координаты: " + event.clientX + ":" + event.clientY);
+        };
+    </script>
+</body>
